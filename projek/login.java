@@ -51,10 +51,14 @@ public class login extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(640, 630));
+        setMaximumSize(new java.awt.Dimension(640, 633));
+        setMinimumSize(new java.awt.Dimension(640, 633));
+        setPreferredSize(new java.awt.Dimension(640, 633));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setMaximumSize(new java.awt.Dimension(640, 633));
+        jPanel1.setMinimumSize(new java.awt.Dimension(640, 633));
         jPanel1.setPreferredSize(new java.awt.Dimension(640, 633));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -148,6 +152,27 @@ public class login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnCNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCNActionPerformed
+        // TODO add your handling code here:
+        txtUsn.setText("");
+        txtPass.setText("");
+        txtUsn.requestFocus();
+    }//GEN-LAST:event_btnCNActionPerformed
+
+    private void gpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gpActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        gantipass gp = new gantipass();
+        gp.setVisible(true);
+    }//GEN-LAST:event_gpActionPerformed
+
+    private void daftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        daftar d = new daftar();
+        d.setVisible(true);
+    }//GEN-LAST:event_daftarActionPerformed
+
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
         Connection kon = Koneksi.Koneksi();
@@ -180,27 +205,6 @@ public class login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_loginActionPerformed
-
-    private void daftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        daftar d = new daftar();
-        d.setVisible(true);
-    }//GEN-LAST:event_daftarActionPerformed
-
-    private void gpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gpActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-        gantipass gp = new gantipass();
-        gp.setVisible(true);
-    }//GEN-LAST:event_gpActionPerformed
-
-    private void btnCNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCNActionPerformed
-        // TODO add your handling code here:
-        txtUsn.setText("");
-        txtPass.setText("");
-        txtUsn.requestFocus();
-    }//GEN-LAST:event_btnCNActionPerformed
 
     /**
      * @param args the command line arguments

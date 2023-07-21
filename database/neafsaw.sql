@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Jul 2023 pada 02.00
+-- Waktu pembuatan: 21 Jul 2023 pada 15.20
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -34,6 +34,16 @@ CREATE TABLE `admin` (
   `password` varchar(255) NOT NULL,
   `level` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`id_user`, `username`, `nama_user`, `password`, `level`) VALUES
+(19001, 'Surya', 'Surya Ramadhani', 'user', 'user'),
+(19002, 'admin', 'admin', 'admin', 'admin'),
+(19003, 'kasir', 'kasir', 'kasir', 'kasir'),
+(19004, 'faras', 'Surya', 'admin', 'admin');
 
 --
 -- Indexes for dumped tables

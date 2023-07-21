@@ -80,26 +80,37 @@ public class daftar extends javax.swing.JFrame {
         lvl = new javax.swing.JComboBox<>();
         txtNmUsn = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(640, 630));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("DAFTAR");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 96, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("USERNAME");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 229, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("PASSWORD");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 361, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("RE-PASSWORD");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 423, -1, -1));
 
         txtUsn.setFont(new java.awt.Font("Tempus Sans ITC", 0, 11)); // NOI18N
+        jPanel1.add(txtUsn, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 226, 224, 35));
 
         daftar.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         daftar.setText("DAFTAR");
@@ -108,9 +119,13 @@ public class daftar extends javax.swing.JFrame {
                 daftarActionPerformed(evt);
             }
         });
+        jPanel1.add(daftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 185, 35));
+        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 358, 224, 35));
+        jPanel1.add(txtRepass, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 420, 224, 35));
 
         jLabel5.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         jLabel5.setText("ID");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 165, -1, -1));
 
         txtID.setFont(new java.awt.Font("Tempus Sans ITC", 0, 11)); // NOI18N
         txtID.setEnabled(false);
@@ -119,6 +134,7 @@ public class daftar extends javax.swing.JFrame {
                 txtIDActionPerformed(evt);
             }
         });
+        jPanel1.add(txtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 162, 224, 35));
 
         refresh.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         refresh.setText("REFRESH");
@@ -127,14 +143,19 @@ public class daftar extends javax.swing.JFrame {
                 refreshActionPerformed(evt);
             }
         });
+        jPanel1.add(refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 530, 185, 35));
 
         jLabel6.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("EYDITH");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 25, 200, -1));
 
         jLabel7.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("COFFEE SHOP");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 200, -1));
 
         batal.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         batal.setText("BATAL");
@@ -143,104 +164,27 @@ public class daftar extends javax.swing.JFrame {
                 batalActionPerformed(evt);
             }
         });
+        jPanel1.add(batal, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 583, 185, 35));
 
         jLabel8.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("LEVEL");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 468, -1, -1));
 
         lvl.setFont(new java.awt.Font("Tempus Sans ITC", 0, 24)); // NOI18N
         lvl.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "user" }));
+        jPanel1.add(lvl, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 461, 224, 35));
 
         txtNmUsn.setFont(new java.awt.Font("Tempus Sans ITC", 0, 11)); // NOI18N
+        jPanel1.add(txtNmUsn, new org.netbeans.lib.awtextra.AbsoluteConstraints(317, 290, 224, 35));
 
         jLabel9.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("NAMA USER");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 293, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(107, 107, 107)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(daftar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel8)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel9)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(3, 3, 3)
-                                        .addComponent(jLabel4))
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel3))
-                                .addGap(73, 73, 73)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtRepass)
-                                    .addComponent(txtPass)
-                                    .addComponent(txtUsn)
-                                    .addComponent(txtID)
-                                    .addComponent(lvl, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtNmUsn)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(234, 234, 234)
-                        .addComponent(jLabel1))
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(99, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(batal, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(226, 226, 226))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtID, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtUsn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNmUsn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txtRepass, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(lvl, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(daftar, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(batal, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60))
-        );
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/83d6a39ca2988f3db45cb60f5cdd741b.jpg"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 630));
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 640, 630);
@@ -349,6 +293,7 @@ public class daftar extends javax.swing.JFrame {
     private javax.swing.JButton batal;
     private javax.swing.JButton daftar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

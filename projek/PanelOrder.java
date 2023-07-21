@@ -104,7 +104,7 @@ public class PanelOrder extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(800, 570));
         setLayout(null);
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
         jPanel5.setMinimumSize(new java.awt.Dimension(900, 700));
         jPanel5.setPreferredSize(new java.awt.Dimension(900, 700));
 

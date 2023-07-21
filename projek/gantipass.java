@@ -42,24 +42,40 @@ public class gantipass extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txtPass = new javax.swing.JPasswordField();
         txtRepass = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(400, 300));
+        setFocusableWindowState(false);
+        setMaximumSize(new java.awt.Dimension(450, 320));
+        setMinimumSize(new java.awt.Dimension(420, 320));
+        setPreferredSize(new java.awt.Dimension(420, 310));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel1.setMaximumSize(new java.awt.Dimension(470, 320));
+        jPanel1.setMinimumSize(new java.awt.Dimension(470, 320));
+        jPanel1.setPreferredSize(new java.awt.Dimension(450, 300));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Ganti Password");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 68, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Username");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 111, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Password");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 152, -1, -1));
+        jPanel1.add(txtUsn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 111, 200, 30));
 
         udt.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
         udt.setText("UPDATE");
@@ -68,6 +84,7 @@ public class gantipass extends javax.swing.JFrame {
                 udtActionPerformed(evt);
             }
         });
+        jPanel1.add(udt, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 231, -1, -1));
 
         refresh.setFont(new java.awt.Font("Tempus Sans ITC", 1, 11)); // NOI18N
         refresh.setText("REFRESH");
@@ -76,70 +93,39 @@ public class gantipass extends javax.swing.JFrame {
                 refreshActionPerformed(evt);
             }
         });
+        jPanel1.add(refresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(257, 231, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Re-Password");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 196, -1, -1));
+        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 152, 200, 30));
+        jPanel1.add(txtRepass, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 195, 200, 30));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1)
-                    .addComponent(txtUsn)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(udt)
-                        .addGap(18, 18, 18)
-                        .addComponent(refresh))
-                    .addComponent(txtPass)
-                    .addComponent(txtRepass, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
-                .addGap(64, 64, 64))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2)
-                    .addComponent(txtUsn, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(txtPass, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                        .addGap(1, 1, 1)))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRepass, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(udt)
-                    .addComponent(refresh))
-                .addGap(46, 46, 46))
-        );
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        jButton1.setText("X");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 50, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic/ed3a824c1e80c77b6374006f5318d4ad.jpg"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 320));
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 424, 300);
+        jPanel1.setBounds(0, 0, 420, 320);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshActionPerformed
         // TODO add your handling code here:
-        this.dispose();
         gantipass gp = new gantipass();
         gp.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_refreshActionPerformed
 
     private void udtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_udtActionPerformed
@@ -156,6 +142,13 @@ public class gantipass extends javax.swing.JFrame {
             e.printStackTrace();
         }
     }//GEN-LAST:event_udtActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        login l = new login();
+        l.show();
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,10 +186,12 @@ public class gantipass extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton refresh;
     private javax.swing.JPasswordField txtPass;
